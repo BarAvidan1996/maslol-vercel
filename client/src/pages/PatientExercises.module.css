@@ -1,0 +1,203 @@
+.container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  direction: rtl;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.filterButton {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filterButton:hover {
+  background-color: #e9ecef;
+}
+
+.filterButton.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.exercisesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.exerciseCard {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.exerciseCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.exerciseInfo {
+  flex: 1;
+}
+
+.exerciseHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.exerciseHeader h3 {
+  font-size: 1.5rem;
+  color: #212529;
+  margin: 0;
+}
+
+.status {
+  align-self: flex-end;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status.assigned, .status.paused, .status.active {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.exerciseCard > p {
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.exerciseDetails {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.duration,
+.repetitions,
+.sets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.duration span, .repetitions span, .sets span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #343a40;
+}
+
+.instructions {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid #007bff;
+}
+
+.actions {
+  align-self: flex-end;
+  margin-top: 0.5rem;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.startButton {
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: flex-end;
+}
+
+.startButton:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .exerciseCard {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .actions {
+    flex-direction: row;
+  }
+
+  .startButton,
+  .detailsButton {
+    flex: 1;
+  }
+}

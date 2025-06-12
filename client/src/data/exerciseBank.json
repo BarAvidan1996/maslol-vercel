@@ -1,0 +1,92 @@
+[
+  {
+    "id": "shoulder_press",
+    "name": "לחיצת כתפיים",
+    "description": "תרגיל לחיזוק שרירי הכתפיים בעזרת משקולות.",
+    "category": "כתפיים",
+    "difficulty": "בינוני",
+    "equipment": "משקולות יד",
+    "image": "/images/shoulder_press.png"
+  },
+  {
+    "id": "squat",
+    "name": "סקוואט",
+    "description": "תרגיל לחיזוק שרירי הרגליים והישבן.",
+    "category": "רגליים",
+    "difficulty": "קל",
+    "equipment": "ללא",
+    "image": "/images/squat.png"
+  },
+  {
+    "id": "plank",
+    "name": "פלאנק",
+    "description": "תרגיל לחיזוק שרירי הליבה והבטן.",
+    "category": "ליבה",
+    "difficulty": "בינוני",
+    "equipment": "ללא",
+    "image": "/images/plank.png"
+  },
+  {
+    "id": "bicep_curl",
+    "name": "כפיפת מרפקים",
+    "description": "תרגיל לחיזוק שרירי הזרוע הקדמית.",
+    "category": "ידיים",
+    "difficulty": "קל",
+    "equipment": "משקולות יד",
+    "image": "/images/bicep_curl.png"
+  },
+  {
+    "id": "bridge",
+    "name": "גשר אגן",
+    "description": "תרגיל לחיזוק שרירי הישבן והגב התחתון.",
+    "category": "גב",
+    "difficulty": "קל",
+    "equipment": "ללא",
+    "image": "/images/bridge.png"
+  },
+  {
+    "id": "wall_pushup",
+    "name": "שכיבות סמיכה על קיר",
+    "description": "תרגיל חזה וכתפיים בגרסה קלה למתחילים.",
+    "category": "חזה",
+    "difficulty": "קל",
+    "equipment": "קיר",
+    "image": "/images/wall_pushup.png"
+  },
+  {
+    "id": "calf_raise",
+    "name": "הרמת עקבים",
+    "description": "תרגיל לחיזוק שרירי השוקיים.",
+    "category": "רגליים",
+    "difficulty": "קל",
+    "equipment": "ללא",
+    "image": "/images/calf_raise.png"
+  },
+  {
+    "id": "side_leg_raise",
+    "name": "הרמת רגל לצד",
+    "description": "תרגיל לחיזוק שרירי הירך החיצוניים.",
+    "category": "ירך",
+    "difficulty": "קל",
+    "equipment": "ללא",
+    "image": "/images/side_leg_raise.png"
+  },
+  {
+    "id": "triceps_dip",
+    "name": "קפיצות טרייספס על כיסא",
+    "description": "תרגיל לחיזוק שרירי הזרוע האחורית.",
+    "category": "ידיים",
+    "difficulty": "בינוני",
+    "equipment": "כיסא",
+    "image": "/images/triceps_dip.png"
+  },
+  {
+    "id": "bird_dog",
+    "name": "בירד דוג",
+    "description": "תרגיל ליציבות ולחיזוק שרירי הגב והליבה.",
+    "category": "גב",
+    "difficulty": "בינוני",
+    "equipment": "ללא",
+    "image": "/images/bird_dog.png"
+  }
+]

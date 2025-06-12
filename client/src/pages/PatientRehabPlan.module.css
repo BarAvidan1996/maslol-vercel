@@ -1,0 +1,52 @@
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem;
+}
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #22223b;
+  margin-bottom: 2rem;
+}
+.section {
+  margin-bottom: 2.2rem;
+}
+.section h2 {
+  font-size: 1.2rem;
+  color: #3a3a3a;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+.exerciseList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.exerciseItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f7fa;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.exerciseButton {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.exerciseButton:hover {
+  background: #1251a3;
+}

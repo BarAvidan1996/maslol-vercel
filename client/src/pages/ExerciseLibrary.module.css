@@ -1,0 +1,307 @@
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.addButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.addButton:hover {
+    background-color: #2980b9;
+}
+
+.addButton svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.exerciseGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.exerciseCard {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.exerciseName {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #2c3e50;
+}
+
+.cardActions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.videoButton,
+.deleteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.videoButton:hover {
+    background-color: #e9ecef;
+    color: #3498db;
+}
+
+.deleteButton:hover {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.videoButton svg,
+.deleteButton svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.exerciseDescription {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.exerciseDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.detailItem {
+    background-color: #f8f9fa;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    color: #2c3e50;
+}
+
+.videoPreview {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.videoPreview video {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.youtubeLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.youtubeLink:hover {
+    background-color: #e9ecef;
+}
+
+.linkIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #dc2626;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+    margin: 0 0 1.5rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form input,
+.form textarea,
+.form select {
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formActions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.submitButton,
+.cancelButton {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submitButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+}
+
+.submitButton:hover {
+    background-color: #2980b9;
+}
+
+.cancelButton {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    border: 1px solid #e0e0e0;
+}
+
+.cancelButton:hover {
+    background-color: #e9ecef;
+}
+
+.videoUploadSection {
+    margin-bottom: 2rem;
+}
+
+.videoUploadSection h3 {
+    margin: 1rem 0 0.5rem;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.fileInput {
+    width: 100%;
+    padding: 1rem;
+    border: 2px dashed #e0e0e0;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.fileInput:hover {
+    border-color: #3498db;
+}
+
+.uploadNote {
+    text-align: center;
+    color: #7f8c8d;
+    margin: 1rem 0;
+}
+
+.youtubeForm {
+    display: flex;
+    gap: 1rem;
+}
+
+.youtubeInput {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.error {
+    text-align: center;
+    color: #dc2626;
+    padding: 2rem;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,240 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 4rem);
+    direction: rtl;
+}
+
+.loading, .error {
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.backButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+    background-color: #e9ecef;
+}
+
+.backButton svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.headerInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.patientIcon {
+    width: 64px;
+    height: 64px;
+    color: #adb5bd;
+}
+
+.patientName {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+}
+
+.appointmentType {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.statusBadge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+}
+
+.detailsGrid {
+    display: flex;
+    gap: 2rem;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.detailItem svg {
+    width: 24px;
+    height: 24px;
+    color: #007bff;
+}
+
+/* Actions */
+.actionsCard {
+    background-color: #f0f7ff;
+}
+
+.actionsCard h3 {
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.actionButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.actionButton svg {
+    width: 20px;
+    height: 20px;
+}
+
+.completeButton {
+    background-color: #28a745;
+    color: white;
+}
+.completeButton:hover { background-color: #218838; }
+
+.cancelButton {
+    background-color: #dc3545;
+    color: white;
+}
+.cancelButton:hover { background-color: #c82333; }
+
+/* Notes */
+.notesHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.notesHeader h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.notesHeader svg {
+    width: 24px;
+    height: 24px;
+}
+
+.editButton {
+    background: none;
+    border: 1px solid #ced4da;
+    color: #495057;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.editButton:hover {
+    background-color: #e9ecef;
+}
+
+.notesContent {
+    color: #495057;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+/* Notes Editor */
+.notesEditor {
+    display: flex;
+    flex-direction: column;
+}
+
+.notesTextarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+.editorActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.saveButton, .cancelEditButton {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.saveButton { background-color: #007bff; color: white; }
+.saveButton:hover { background-color: #0056b3; }
+
+.cancelEditButton { background-color: #e9ecef; color: #495057; }
+.cancelEditButton:hover { background-color: #dee2e6; }
+
+/* Status Colors */
+.scheduled { background-color: #cce5ff; color: #004085; }
+.completed { background-color: #d4edda; color: #155724; }
+.cancelled { background-color: #f8d7da; color: #721c24; }
